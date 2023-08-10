@@ -1,4 +1,4 @@
-const get = (object, path, initial) => {
+export const trialOne = (object, path, initial) => {
   const result = path
     .split(".")
     .reduce((prev, cur) => prev && prev[cur], object);
